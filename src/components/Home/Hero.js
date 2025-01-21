@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col gap-2 lg:gap-4 mt-8 lg:mt-0">
             <div className="flex gap-2 lg:gap-4 place-content-center">
-              <div className="bg-white w-[177px] lg:w-[180px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
+              <div className="bg-[#FFFFFFCC] w-[177px] lg:w-[180px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
                 <p className="font-black text-4xl">70%</p>
                 <p>
                   <span className="font-medium text-sm">
@@ -67,16 +67,16 @@ const Hero = () => {
                   <span className="font-bold text-sm">Energy Bills</span>
                 </p>
               </div>
-              <div className="bg-white w-[210px] lg:w-[214px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
+              <div className="bg-[#FFFFFFCC] w-[210px] lg:w-[214px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
                 <p className="font-black text-4xl">1,000</p>
                 <p className="font-medium text-sm text-center">
                   Over 1,000 Installations Completed
                 </p>
               </div>
             </div>
-            <div className="bg-gray-200 gap-1 p-3 w-full lg:w-[407px] h-[72px] rounded-full flex items-center">
-              <div className="bg-white rounded-full p-2 flex-shrink-0">
-                <Image src={verifyIcon} alt="verifyIcon" />
+            <div className="bg-[#FFFFFFCC] gap-1 p-3 w-full lg:w-[407px] h-[72px] rounded-full flex items-center">
+              <div className="bg-[#FFFFFFCC] rounded-full p-2 flex-shrink-0">
+                <Image src={verifyIcon} alt="verifyIcon" className="rounded-full" />
               </div>
               <p className="text-center">
                 <span className="font-bold text-balance">25-year warranty</span>{" "}

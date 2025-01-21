@@ -26,7 +26,7 @@ const SolarProductsSection = () => {
   ];
 
   return (
-    <section className="bg-[#EFF6F6] py-16 px-4 md:px-8">
+    <section className="bg-[#ddecec] py-16 px-4 md:px-8 rounded-3xl">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold mb-4">
@@ -35,7 +35,7 @@ const SolarProductsSection = () => {
             AND MORE WITH{" "}
             <span className="text-[#EAC26A]">SOLAR IN MANITOBA</span>
           </h2>
-          <p className="text-gray-600 max-w-4xl mx-auto">
+          <p className="text-gray-600 max-w-5xl mx-auto">
             At Vibes Energy Solar, we provide cutting-edge renewable energy
             solutions tailored to your needs. From powering your home or
             business with solar systems to installing Manitoba's chargers, our
@@ -45,11 +45,11 @@ const SolarProductsSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-6">
+        <div className="flex flex-wrap items-center justify-around w-full">
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-[50px] overflow-hidden relative group hover:shadow-lg transition-shadow w-[373px] h-[484px]"
+              className="bg-[#FFFFFF] rounded-[50px] overflow-hidden relative group hover:shadow-lg transition-shadow w-[373px] h-[484px]"
             >
               {index === 1 ? (
                 <>

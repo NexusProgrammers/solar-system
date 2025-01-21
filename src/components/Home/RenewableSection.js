@@ -39,7 +39,7 @@ const RenewableSection = () => {
               width={74}
               height={74}
               alt="CircleIcon"
-              className="absolute top-0 right-1 cursor-pointer"
+              className="absolute top-0 right-1 "
             />
           </div>
         </div>
