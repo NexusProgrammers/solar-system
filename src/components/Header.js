@@ -3,10 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { BsChatDotsFill } from "react-icons/bs";
+import { RiCloseLine } from "react-icons/ri";
 import vibesEngergy from "./assets/vibes-energy.svg";
 import quoteIcon from "./assets/quote-icon.svg";
+import navbarIcon from "./assets/nav-icon.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <nav className="absolute w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 lg:px-0">
         <div className="bg-white rounded-[100px] mt-3 px-6">
           <div className="flex justify-between items-center h-[72px]">
             <div className="lg:hidden">
@@ -25,7 +25,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className="text-gray-800 hover:text-teal-600 focus:outline-none"
               >
-                <RiMenu3Line className="h-8 w-8" />
+                <Image src={navbarIcon} alt="navbarIcon" />
               </button>
             </div>
             <div className="flex-shrink-0 relative w-[140px] lg:w-[249px] h-auto">
