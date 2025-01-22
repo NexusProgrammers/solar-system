@@ -25,7 +25,7 @@ const SolarStatsAndIncentives = () => {
             generating 5 MW of clean energy and saving our customers millions in
             energy costs.
           </p>
-          <div className="flex flex-col gap-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
             <button className="bg-[#1AAC98] w-full md:w-[264px] h-[48px] flex items-center justify-center hover:bg-emerald-600 text-white rounded-full font-semibold transition-colors duration-200 text-base md:text-lg">
               Request A Free Quote
             </button>
