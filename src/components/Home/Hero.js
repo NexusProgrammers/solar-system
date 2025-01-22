@@ -22,7 +22,7 @@ const Hero = () => {
       <nav className="relative z-10 px-4 py-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
           <div className="flex-shrink-0 absolute top-44">
-            <Image src={solarSolution} alt="Vibes Energy" />
+            <Image src={solarSolution} alt="Vibes Energy" className="opacity-70"/>
           </div>
         </div>
       </nav>

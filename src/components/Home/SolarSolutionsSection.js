@@ -6,6 +6,8 @@ import circleIconGreen from "../assets/circle-icon-green.svg";
 import arrowIcon from "../assets/arrow-icon.svg";
 import customizeSolutions from "../assets/customize-solution-icon.svg";
 import endToEndIcon from "../assets/end-to-end-icon.svg";
+import solarImage from "../assets/solar-image.svg";
+import { quoteAfterData, quoteBeforeData } from "@/data/data";
 
 const SolarSolutionsSection = () => {
   return (
@@ -54,7 +56,7 @@ const SolarSolutionsSection = () => {
         </div>
         <div className="space-y- w-[400px]">
           <div className="flex flex-col gap-6">
-            <div className="space-y-6 border-b-2 pb-8">
+            <div className="space-y-6 border-b-2 pb-6">
               <Image src={customizeSolutions} alt="customizeSolutions" />
               <h4 className="font-semibold">Customized Solutions</h4>
               <p className="text-[#202020CC] text-lg font-normal max-w-[336px]">
@@ -72,6 +74,115 @@ const SolarSolutionsSection = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        {quoteBeforeData.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className="flex flex-col md:flex-row justify-between mt-12 border-b-2 pb-6"
+            >
+              <div className="flex justify-between">
+                <div className="flex gap-4">
+                  <p className="font-medium text-2xl text-[#20202066]">
+                    {item.number}
+                  </p>
+                  <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+                    {item.title}
+                  </p>
+                </div>
+                <div className="md:hidden">
+                  <Image src={item.icon} alt="dropDownIcon" />
+                </div>
+              </div>
+              <div>
+                <p className="hidden md:block max-w-[468] text-[#202020B2] font-normal">
+                  {item.description}
+                </p>
+              </div>
+              <div className="hidden md:flex">
+                <Image src={item.icon} alt="dropDownIcon" />
+              </div>
+            </div>
+          );
+        })}
+        <div className="flex flex-col lg:flex-row justify-between gap-6 mt-6">
+          <div className="relative rounded-lg overflow-hidden">
+            <Image
+              src={solarImage}
+              alt="solarImage"
+              className="w-full object-cover"
+            />
+
+            <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
+              {["Offices", "retail spaces", "warehouses", "schools"].map(
+                (tag) => (
+                  <span
+                    key={tag}
+                    className="bg-[#FFFFFF] text-[#000000] px-4 py-2 rounded-full text-sm font-medium"
+                  >
+                    {tag}
+                  </span>
+                )
+              )}
+            </div>
+          </div>
+          <div>
+            <ul className="space-y-4">
+              {[
+                "Scalable systems tailored to your business size.",
+                "Reduce electricity expenses and increase profitability.",
+                "ax credits and incentives for commercial installations.",
+              ].map((benefit) => (
+                <li
+                  key={benefit}
+                  className="flex gap-4 items-center px-3 justify-center bg-[#F9F9F9] rounded-lg w-full h-[75px]"
+                >
+                  <div className="w-[10px] h-[10px] bg-[#1AAC98]"></div>
+                  <span className="text-[#000000CC] text-lg font-normal">
+                    {benefit}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div className="text-base text-[#202020CC] font-normal mt-4">
+              Custom Grid tie Commercial solar proposals available in 24 hours
+            </div>
+            <button className="w-full rounded-full bg-[#1AAC98] text-[#FFFFFF] h-[49px] flex justify-center items-center hover:bg-emerald-600 transition-colors mt-2">
+              Request A Quote Today
+            </button>
+          </div>
+        </div>
+        {quoteAfterData.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className="flex flex-col md:flex-row justify-between mt-12 border-b-2 pb-6"
+            >
+              <div className="flex justify-between">
+                <div className="flex gap-4">
+                  <p className="font-medium text-2xl text-[#20202066]">
+                    {item.number}
+                  </p>
+                  <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+                    {item.title}
+                  </p>
+                </div>
+                <div className="md:hidden">
+                  <Image src={item.icon} alt="dropDownIcon" />
+                </div>
+              </div>
+              <div>
+                <p className="hidden md:block max-w-[468] text-[#202020B2] font-normal">
+                  {item.description}
+                </p>
+              </div>
+              <div className="hidden md:flex">
+                <Image src={item.icon} alt="dropDownIcon" />
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

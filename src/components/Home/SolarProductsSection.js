@@ -1,30 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Image from "next/image";
-import solarImageOne from "../assets/solar-production-icon-one.svg";
-import solarImageTwo from "../assets/solar-production-icon-two.svg";
-import solarImageThree from "../assets/solar-production-icon-three.svg";
+
 import CircleIcon from "../assets/circle-icon.svg";
+import { products } from "@/data/data";
 
 const SolarProductsSection = () => {
-  const products = [
-    {
-      title: "Electric Vehicle Charger Installation",
-      price: "Starting at $1,750",
-      image: solarImageOne,
-    },
-    {
-      title: "Grid Tie",
-      price: "Contact Us For Pricing",
-      image: solarImageTwo,
-    },
-    {
-      title: "Off-Grid",
-      price: "Starting at $6,300",
-      image: solarImageThree,
-    },
-  ];
-
   return (
     <section className="bg-[#ddecec] py-16 px-4 md:px-8 rounded-3xl">
       <div className="max-w-7xl mx-auto">
@@ -44,7 +25,6 @@ const SolarProductsSection = () => {
             find the perfect energy solution for you.
           </p>
         </div>
-
         <div className="flex flex-wrap items-center justify-around w-full">
           {products.map((product, index) => (
             <div
@@ -94,7 +74,11 @@ const SolarProductsSection = () => {
                     </p>
                   </div>
                   <div className="w-full flex justify-end absolute bottom-4">
-                    <Image src={CircleIcon} alt="CircleIcon" className="p-2 cursor-pointer" />
+                    <Image
+                      src={CircleIcon}
+                      alt="CircleIcon"
+                      className="p-2 cursor-pointer"
+                    />
                   </div>
                 </>
               )}
