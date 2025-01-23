@@ -1,3 +1,4 @@
+import BlogsAndArticles from "@/components/Home/BlogsAndArticles";
 import Hero from "@/components/Home/Hero";
 import IncentivesCards from "@/components/Home/IncentivesCards";
 import ProjectGallery from "@/components/Home/ProjectGallery";
@@ -20,6 +21,7 @@ const Home = () => {
       <ProjectGallery />
       <SolarStatsAndIncentives />
       <IncentivesCards />
+      <BlogsAndArticles />
     </>
   );
 };
