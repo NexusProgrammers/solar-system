@@ -9,20 +9,40 @@ import verifyIcon from "../assets/verify-icon.svg";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-gray-100">
+    <div className="relative min-h-screen bg-gray-100 -mt-24">
       <div className="absolute inset-0">
-        <Image
+      <Image
           src={backgroundImage}
           alt="Solar Panels Background"
           fill
-          className="object-cover brightness-90"
+          className="object-cover brightness-90 rounded-b-3xl z-0"
           priority
         />
       </div>
       <nav className="relative z-10 px-4 py-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <div className="flex-shrink-0 absolute top-44">
-            <Image src={solarSolution} alt="Vibes Energy" className="opacity-70"/>
+          <div className="flex-shrink-0 absolute top-32">
+            <p className="uppercase hidden xl:flex gap-10 text-white text-[140px] font-extrabold">
+              <div>
+                <span>S</span>
+                <span>O</span>
+                <span>L</span>
+                <span>A</span>
+                <span>R</span>
+              </div>
+
+              <div>
+                <span className="opacity-90">S</span>
+                <span className="opacity-80">O</span>
+                <span className="opacity-70">L</span>
+                <span className="opacity-60">U</span>
+                <span className="opacity-50">T</span>
+                <span className="opacity-40">I</span>
+                <span className="opacity-30">O</span>
+                <span className="opacity-10">N</span>
+                <span className="opacity-5">S</span>
+              </div>
+            </p>
           </div>
         </div>
       </nav>
@@ -35,11 +55,11 @@ const Hero = () => {
                 Manitoba's solar energy company
               </p>
             </div>
-            <h1 className="text-[42px] lg:text-[60px] font-bold text-white text-center lg:text-left">
+            <h1 className="text-4xl sm:text-[42px] lg:text-[60px] font-bold text-white text-center lg:text-left">
               <p className="whitespace-nowrap">
                 FOR US. <span className="text-yellow-400">FOR THEM.</span>
               </p>
-              <p className="whitespace-nowrap">FOR THE FUTURE.</p>
+              <p className="whitespace-nowrap py-8">FOR THE FUTURE.</p>
             </h1>
             <p className="text-white text-base lg:text-lg mb-8 max-w-xl text-center lg:text-left">
               Manitoba's leader in Solar Panel supply and installation. We
@@ -76,7 +96,11 @@ const Hero = () => {
             </div>
             <div className="bg-[#FFFFFFCC] gap-1 p-3 w-full lg:w-[407px] h-[72px] rounded-full flex items-center">
               <div className="bg-[#FFFFFFCC] rounded-full p-2 flex-shrink-0">
-                <Image src={verifyIcon} alt="verifyIcon" className="rounded-full" />
+                <Image
+                  src={verifyIcon}
+                  alt="verifyIcon"
+                  className="rounded-full"
+                />
               </div>
               <p className="text-center">
                 <span className="font-bold text-balance">25-year warranty</span>{" "}

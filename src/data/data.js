@@ -4,14 +4,14 @@ import solarImageOne from ".././components/assets/solar-production-icon-one.svg"
 import solarImageTwo from ".././components/assets/solar-production-icon-two.svg";
 import solarImageThree from ".././components/assets/solar-production-icon-three.svg";
 import startIcon from ".././components/assets/start-icon.svg";
-import galleryImageOne from '.././components/assets/Gallary/image-one.svg'
-import galleryImageTwo from '.././components/assets/Gallary/image-two.svg'
-import galleryImageThree from '.././components/assets/Gallary/image-three.svg'
-import galleryImageFour from '.././components/assets/Gallary/image-four.svg'
-import galleryImageFive from '.././components/assets/Gallary/image-five.svg'
-import galleryImageSix from '.././components/assets/Gallary/image-six.svg'
-import galleryImageSeven from '.././components/assets/Gallary/image-seven.svg'
-import galleryImageEight from '.././components/assets/Gallary/image-eight.svg'
+import imageOne from ".././components/assets/Gallary/image-one.svg";
+import imageTwo from ".././components/assets/Gallary/image-two.svg";
+import imageThree from ".././components/assets/Gallary/image-three.svg";
+import imageFour from ".././components/assets/Gallary/image-four.svg";
+import imageFive from ".././components/assets/Gallary/image-five.svg";
+import imageSix from ".././components/assets/Gallary/image-six.svg";
+import imageSeven from ".././components/assets/Gallary/image-seven.svg";
+import imageEight from ".././components/assets/Gallary/image-eight.svg";
 
 export const quoteBeforeData = [
   {
@@ -138,51 +138,405 @@ export const filtersData = [
 
 export const projectsData = [
   {
-    id: 1,
-    imageUrl: galleryImageOne,
-    title: "Ground Mount Solar Installation",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 2,
-    imageUrl: galleryImageTwo,
-    title: "Industrial Solar Installation",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 3,
-    imageUrl: galleryImageThree,
-    title: "Agricultural Solar Project",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 4,
-    imageUrl: galleryImageFour,
-    title: "Winter Solar Installation",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 5,
-    imageUrl: galleryImageFive,
-    title: "Commercial Solar Project",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 6,
-    imageUrl: galleryImageSix,
-    title: "Ground Mount Installation",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 7,
-    imageUrl: galleryImageSeven,
-    title: "Rooftop Solar Project",
-    location: "Local projects in Manitoba",
-  },
-  {
-    id: 8,
-    imageUrl: galleryImageEight,
-    title: "Large Scale Solar Installation",
-    location: "Local projects in Manitoba",
+    first: [
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    second: [
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    third: [
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    fourth: [
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    fifth: [
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    sixth: [
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    eighth: [
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
+    ninth: [
+      {
+        id: 5,
+        imageUrl: imageFive,
+        title: "Commercial Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 6,
+        imageUrl: imageSix,
+        title: "Ground Mount Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 7,
+        imageUrl: imageSeven,
+        title: "Rooftop Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 8,
+        imageUrl: imageEight,
+        title: "Large Scale Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 1,
+        imageUrl: imageOne,
+        title: "Ground Mount Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 2,
+        imageUrl: imageTwo,
+        title: "Industrial Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 3,
+        imageUrl: imageThree,
+        title: "Agricultural Solar Project",
+        location: "Local projects in Manitoba",
+      },
+      {
+        id: 4,
+        imageUrl: imageFour,
+        title: "Winter Solar Installation",
+        location: "Local projects in Manitoba",
+      },
+    ],
   },
 ];

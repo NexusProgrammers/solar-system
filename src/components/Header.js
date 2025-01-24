@@ -16,9 +16,9 @@ const Header = () => {
   };
 
   return (
-    <nav className="absolute w-full top-0 z-50">
+    <nav className="w-full top-6 z-50 sticky">
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
-        <div className="bg-white rounded-[100px] mt-3 px-6">
+        <div className="bg-[#FFFFFFCC] rounded-[100px] mt-3 px-6 shadow">
           <div className="flex justify-between items-center h-[72px]">
             <div className="lg:hidden">
               <button

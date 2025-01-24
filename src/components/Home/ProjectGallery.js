@@ -1,8 +1,9 @@
 "use client";
 
-import { filtersData, projectsData } from "@/data/data";
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
+import { filtersData } from "@/data/data";
+import { getProjectsForFilter } from "../helper/helperFunctions";
 
 const ProjectGallery = () => {
   const [activeFilter, setActiveFilter] = useState("NEWEST");
@@ -28,7 +29,7 @@ const ProjectGallery = () => {
         </div>
       </div>
       <div className="block md:hidden space-y-4">
-        {projectsData.map((project) => (
+        {getProjectsForFilter(activeFilter).map((project) => (
           <div
             key={project.id}
             className="relative rounded-2xl overflow-hidden bg-gray-100"
@@ -51,7 +52,7 @@ const ProjectGallery = () => {
         ))}
       </div>
       <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {projectsData.map((project) => (
+        {getProjectsForFilter(activeFilter).map((project) => (
           <div
             key={project.id}
             className="relative group rounded-lg overflow-hidden bg-gray-100"

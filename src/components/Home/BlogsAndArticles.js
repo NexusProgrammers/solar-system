@@ -36,7 +36,7 @@ const BlogsAndArticles = () => {
         <div className="py-8 pb-8 overflow-x-auto whitespace-nowrap">
           <div className="flex gap-3">
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Grid tie'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -46,7 +46,7 @@ const BlogsAndArticles = () => {
               Grid tie
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Solar Energy'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -56,7 +56,7 @@ const BlogsAndArticles = () => {
               Solar Energy
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Off Grid'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -66,7 +66,7 @@ const BlogsAndArticles = () => {
               Off Grid
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Sustainability'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -76,7 +76,7 @@ const BlogsAndArticles = () => {
               Sustainability
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Cost Savings'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -86,7 +86,7 @@ const BlogsAndArticles = () => {
               Cost Savings
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Technological Advancements'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'
@@ -96,7 +96,7 @@ const BlogsAndArticles = () => {
               Technological Advancements
             </button>
             <button
-              className={`text-[#FFFFFF] py-2 px-4 rounded-full cursor-pointer ${
+              className={`py-2 px-4 rounded-full cursor-pointer ${
                 activeButton === 'Case Studies'
                   ? 'bg-[#1AAC98]'
                   : 'bg-white text-[#20202080]'

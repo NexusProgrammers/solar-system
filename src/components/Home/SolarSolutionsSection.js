@@ -1,15 +1,101 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import solarWorker from "../assets/solar-worker.svg";
 import circleIconGreen from "../assets/circle-icon-green.svg";
 import arrowIcon from "../assets/arrow-icon.svg";
 import customizeSolutions from "../assets/customize-solution-icon.svg";
 import endToEndIcon from "../assets/end-to-end-icon.svg";
 import solarImage from "../assets/solar-image.svg";
+import dropDownIcon from "../assets/drop-down-icon.svg";
+import dropUpIcon from "../assets/drop-up-icon.svg";
 import { quoteAfterData, quoteBeforeData } from "@/data/data";
 
 const SolarSolutionsSection = () => {
+  const [openSections, setOpenSections] = useState({});
+
+  const toggleSection = (id) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [id]: !prev[id],
+    }));
+  };
+
+  const renderQuoteSection = (data) => {
+    return data.map((item) => {
+      const isOpen = openSections[item.id];
+      return (
+        <div
+          key={item.id}
+          className="flex flex-col justify-between mt-12 border-b-2 pb-6"
+        >
+          <div
+            className={`flex  ${
+              isOpen ? "justify-between items-center" : "justify-end items-end"
+            }  w-full`}
+          >
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <div className="flex gap-8">
+                    <p className="font-medium text-2xl text-[#20202066]">
+                      {item.number}
+                    </p>
+                    <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+                      {item.title}
+                    </p>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+            <AnimatePresence>
+              {isOpen && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <p className="text-[#202020B2] font-normal max-w-[468px] mt-4">
+                    {item.description}
+                  </p>
+                </motion.div>
+              )}
+            </AnimatePresence>
+            <motion.div
+              onClick={() => toggleSection(item.id)}
+              className="cursor-pointer bg-red-400 flex justify-end items-end"
+              // animate={{ rotate: isOpen ? 180 : 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              {isOpen ? (
+                <Image
+                  src={dropDownIcon}
+                  alt="dropDownIcon"
+                />
+              ) : (
+                <Image
+                  src={dropUpIcon}
+                  alt="dropDownIcon"
+                />
+              )}
+            </motion.div>
+          </div>
+        </div>
+      );
+    });
+  };
+
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
       <div className="gap-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden">
@@ -76,36 +162,7 @@ const SolarSolutionsSection = () => {
         </div>
       </div>
       <div>
-        {quoteBeforeData.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className="flex flex-col md:flex-row justify-between mt-12 border-b-2 pb-6"
-            >
-              <div className="flex justify-between">
-                <div className="flex gap-4">
-                  <p className="font-medium text-2xl text-[#20202066]">
-                    {item.number}
-                  </p>
-                  <p className="text-3xl text-[#202020] font-semibold max-w-xs">
-                    {item.title}
-                  </p>
-                </div>
-                <div className="md:hidden">
-                  <Image src={item.icon} alt="dropDownIcon" />
-                </div>
-              </div>
-              <div>
-                <p className="hidden md:block max-w-[468] text-[#202020B2] font-normal">
-                  {item.description}
-                </p>
-              </div>
-              <div className="hidden md:flex">
-                <Image src={item.icon} alt="dropDownIcon" />
-              </div>
-            </div>
-          );
-        })}
+        {renderQuoteSection(quoteBeforeData)}
         <div className="flex flex-col lg:flex-row justify-between gap-6 mt-6">
           <div className="relative rounded-lg overflow-hidden">
             <Image
@@ -153,36 +210,7 @@ const SolarSolutionsSection = () => {
             </button>
           </div>
         </div>
-        {quoteAfterData.map((item) => {
-          return (
-            <div
-              key={item.id}
-              className="flex flex-col md:flex-row justify-between mt-12 border-b-2 pb-6"
-            >
-              <div className="flex justify-between">
-                <div className="flex gap-4">
-                  <p className="font-medium text-2xl text-[#20202066]">
-                    {item.number}
-                  </p>
-                  <p className="text-3xl text-[#202020] font-semibold max-w-xs">
-                    {item.title}
-                  </p>
-                </div>
-                <div className="md:hidden">
-                  <Image src={item.icon} alt="dropDownIcon" />
-                </div>
-              </div>
-              <div>
-                <p className="hidden md:block max-w-[468] text-[#202020B2] font-normal">
-                  {item.description}
-                </p>
-              </div>
-              <div className="hidden md:flex">
-                <Image src={item.icon} alt="dropDownIcon" />
-              </div>
-            </div>
-          );
-        })}
+        {renderQuoteSection(quoteAfterData)}
       </div>
     </section>
   );

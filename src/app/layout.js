@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} font-dm-sans min-h-screen flex flex-col antialiased`}
+        className={` ${dmSans.variable} font-dm-sans min-h-screen flex flex-col antialiased`}
       >
         <Header />
         <main className="flex-1">{children}</main>
