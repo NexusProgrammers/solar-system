@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import backgroundImage from "../assets/hero-section-background.svg";
-import solarSolution from "../assets/solar-solution.svg";
 import { IoIosArrowForward } from "react-icons/io";
 import globalIcon from "../assets/global-icon.svg";
 import { PiPhoneCallThin } from "react-icons/pi";
@@ -9,13 +8,13 @@ import verifyIcon from "../assets/verify-icon.svg";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-gray-100 -mt-24">
+    <div className="relative min-h-screen bg-gray-100">
       <div className="absolute inset-0">
-      <Image
+        <Image
           src={backgroundImage}
           alt="Solar Panels Background"
           fill
-          className="object-cover brightness-90 rounded-b-3xl z-0"
+          className="object-cover brightness-90 z-0 rounded-b-3xl bg-black"
           priority
         />
       </div>
@@ -94,19 +93,43 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-[#FFFFFFCC] gap-1 p-3 w-full lg:w-[407px] h-[72px] rounded-full flex items-center">
-              <div className="bg-[#FFFFFFCC] rounded-full p-2 flex-shrink-0">
+            <div className="relative w-full lg:w-[407px] h-[72px] flex items-center justify-center">
+              <div className="absolute top-6 w-[80%] h-full rounded-full bg-white/70"></div>
+              <div className="absolute top-3 w-[94%] h-full rounded-full bg-white/80"></div>
+              <div className="absolute w-full h-full rounded-full bg-white"></div>
+              <div className="relative flex items-center gap-3 px-4 py-2 w-full h-full z-40">
+                <div className="bg-white rounded-full p-2 flex-shrink-0">
+                  <Image
+                    src={verifyIcon}
+                    alt="verifyIcon"
+                    className="w-6 h-6"
+                  />
+                </div>
+                <p className="text-sm text-gray-800">
+                  <span className="font-semibold">25-year warranty</span> for
+                  reliable, long-term solar performance
+                </p>
+              </div>
+            </div>
+            {/* <div className="relative">
+              <div className="relative flex items-center justify-center over">
                 <Image
-                  src={verifyIcon}
-                  alt="verifyIcon"
-                  className="rounded-full"
+                  src={imageOne}
+                  alt="imageOne"
+                  className="absolute z-50 top-0"
+                />
+                <Image
+                  src={imageTwo}
+                  alt="imageTwo"
+                  className="absolute z-40 top-3"
+                />
+                <Image
+                  src={imageThree}
+                  alt="imageThree"
+                  className="absolute z-30 top-6"
                 />
               </div>
-              <p className="text-center">
-                <span className="font-bold text-balance">25-year warranty</span>{" "}
-                for reliable, long-term solar performance
-              </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ import CircleIcon from "../assets/circle-icon.svg";
 import SunIcon from "../assets/sun-icon.svg";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
+import greenImage from "../assets/green-image.svg";
 
 const RenewableSection = () => {
   return (
@@ -56,9 +57,18 @@ const RenewableSection = () => {
             </span>
           </p>
           <div className="relative mt-8 max-w-[647px]">
-            <div className="bg-white rounded-lg overflow-hidden flex flex-col items-center lg:items-start justify-center lg:justify-start lg:flex-row ">
-              <div className="">
-                <Image src={OpenChatIcon} alt="OpenChatIcon" />
+            <div className="bg-white rounded-lg overflow-hidden flex flex-col items-center lg:items-start justify-center lg:justify-start lg:flex-row">
+              <div className="relative">
+                <Image
+                  src={greenImage}
+                  alt={"greenImage"}
+                  className="mt-2 ml-8 w-[89%] h-[100%] "
+                />
+                <Image
+                  src={OpenChatIcon}
+                  alt={"OpenChatIcon"}
+                  className="absolute -top-4 left-6"
+                />
               </div>
               <div className="p-4 bg-white flex flex-col items-center lg:block">
                 <p className="text-[#202020] max-w-[330px] font-normal text-lg text-center lg:text-start">

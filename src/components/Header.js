@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import vibesEngergy from "./assets/vibes-energy.svg";
 import quoteIcon from "./assets/quote-icon.svg";
@@ -10,15 +10,41 @@ import navbarIcon from "./assets/nav-icon.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="w-full top-6 z-50 sticky">
+    <nav
+      className={`w-full z-50 fixed top-0 transition-all duration-300 ease-in-out ${
+        isSticky
+          ? "bg-[#FFFFFFCC] backdrop-blur-sm shadow-md"
+          : "bg-transparent shadow-none"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 lg:px-0">
-        <div className="bg-[#FFFFFFCC] rounded-[100px] mt-3 px-6 shadow">
+        <div
+          className={` ${
+            isSticky ? "" : "bg-[#FFFFFFCC] rounded-[100px] mt-3 px-6 shadow"
+          } `}
+        >
           <div className="flex justify-between items-center h-[72px]">
             <div className="lg:hidden">
               <button

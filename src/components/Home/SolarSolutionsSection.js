@@ -12,7 +12,7 @@ import endToEndIcon from "../assets/end-to-end-icon.svg";
 import solarImage from "../assets/solar-image.svg";
 import dropDownIcon from "../assets/drop-down-icon.svg";
 import dropUpIcon from "../assets/drop-up-icon.svg";
-import { quoteAfterData, quoteBeforeData } from "@/data/data";
+import { quoteAfterData,  } from "@/data/data";
 
 const SolarSolutionsSection = () => {
   const [openSections, setOpenSections] = useState({});
@@ -32,6 +32,29 @@ const SolarSolutionsSection = () => {
           key={item.id}
           className="flex flex-col justify-between mt-12 border-b-2 pb-6"
         >
+          <div className="flex justify-between gap-8">
+            <p className="font-medium text-2xl text-[#20202066]">
+              {item.number}
+            </p>
+            <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+              {item.title}
+            </p>
+            <p className="text-[#202020B2] font-normal max-w-[468px] mt-4">
+              {item.description}
+            </p>
+            <motion.div
+              onClick={() => toggleSection(item.id)}
+              className="cursor-pointer flex justify-start items-start"
+              transition={{ duration: 0.3 }}
+            >
+              {isOpen ? (
+                <Image src={dropDownIcon} alt="dropDownIcon" />
+              ) : (
+                <Image src={dropUpIcon} alt="dropDownIcon" />
+              )}
+            </motion.div>
+          </div>
+
           <div
             className={`flex  ${
               isOpen ? "justify-between items-center" : "justify-end items-end"
@@ -46,50 +69,60 @@ const SolarSolutionsSection = () => {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="flex gap-8">
-                    <p className="font-medium text-2xl text-[#20202066]">
-                      {item.number}
-                    </p>
-                    <p className="text-3xl text-[#202020] font-semibold max-w-xs">
-                      {item.title}
-                    </p>
+                  <div className="flex flex-col lg:flex-row justify-between gap-6 mt-6">
+                    <div className="relative rounded-lg overflow-hidden">
+                      <Image
+                        src={solarImage}
+                        alt="solarImage"
+                        className="w-full object-cover"
+                      />
+
+                      <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
+                        {[
+                          "Offices",
+                          "retail spaces",
+                          "warehouses",
+                          "schools",
+                        ].map((tag) => (
+                          <span
+                            key={tag}
+                            className="bg-[#FFFFFF] text-[#000000] px-4 py-2 rounded-full text-sm font-medium"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <ul className="space-y-4">
+                        {[
+                          "Scalable systems tailored to your business size.",
+                          "Reduce electricity expenses and increase profitability.",
+                          "ax credits and incentives for commercial installations.",
+                        ].map((benefit) => (
+                          <li
+                            key={benefit}
+                            className="flex gap-4 items-center px-3 justify-center bg-[#F9F9F9] rounded-lg w-full h-[75px]"
+                          >
+                            <div className="w-[10px] h-[10px] bg-[#1AAC98]"></div>
+                            <span className="text-[#000000CC] text-lg font-normal">
+                              {benefit}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="text-base text-[#202020CC] font-normal mt-4">
+                        Custom Grid tie Commercial solar proposals available in
+                        24 hours
+                      </div>
+                      <button className="w-full rounded-full bg-[#1AAC98] text-[#FFFFFF] h-[49px] flex justify-center items-center hover:bg-emerald-600 transition-colors mt-2">
+                        Request A Quote Today
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               )}
             </AnimatePresence>
-            <AnimatePresence>
-              {isOpen && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  <p className="text-[#202020B2] font-normal max-w-[468px] mt-4">
-                    {item.description}
-                  </p>
-                </motion.div>
-              )}
-            </AnimatePresence>
-            <motion.div
-              onClick={() => toggleSection(item.id)}
-              className="cursor-pointer bg-red-400 flex justify-end items-end"
-              // animate={{ rotate: isOpen ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
-            >
-              {isOpen ? (
-                <Image
-                  src={dropDownIcon}
-                  alt="dropDownIcon"
-                />
-              ) : (
-                <Image
-                  src={dropUpIcon}
-                  alt="dropDownIcon"
-                />
-              )}
-            </motion.div>
           </div>
         </div>
       );
@@ -161,57 +194,7 @@ const SolarSolutionsSection = () => {
           </div>
         </div>
       </div>
-      <div>
-        {renderQuoteSection(quoteBeforeData)}
-        <div className="flex flex-col lg:flex-row justify-between gap-6 mt-6">
-          <div className="relative rounded-lg overflow-hidden">
-            <Image
-              src={solarImage}
-              alt="solarImage"
-              className="w-full object-cover"
-            />
-
-            <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
-              {["Offices", "retail spaces", "warehouses", "schools"].map(
-                (tag) => (
-                  <span
-                    key={tag}
-                    className="bg-[#FFFFFF] text-[#000000] px-4 py-2 rounded-full text-sm font-medium"
-                  >
-                    {tag}
-                  </span>
-                )
-              )}
-            </div>
-          </div>
-          <div>
-            <ul className="space-y-4">
-              {[
-                "Scalable systems tailored to your business size.",
-                "Reduce electricity expenses and increase profitability.",
-                "ax credits and incentives for commercial installations.",
-              ].map((benefit) => (
-                <li
-                  key={benefit}
-                  className="flex gap-4 items-center px-3 justify-center bg-[#F9F9F9] rounded-lg w-full h-[75px]"
-                >
-                  <div className="w-[10px] h-[10px] bg-[#1AAC98]"></div>
-                  <span className="text-[#000000CC] text-lg font-normal">
-                    {benefit}
-                  </span>
-                </li>
-              ))}
-            </ul>
-            <div className="text-base text-[#202020CC] font-normal mt-4">
-              Custom Grid tie Commercial solar proposals available in 24 hours
-            </div>
-            <button className="w-full rounded-full bg-[#1AAC98] text-[#FFFFFF] h-[49px] flex justify-center items-center hover:bg-emerald-600 transition-colors mt-2">
-              Request A Quote Today
-            </button>
-          </div>
-        </div>
-        {renderQuoteSection(quoteAfterData)}
-      </div>
+      <div>{renderQuoteSection(quoteAfterData)}</div>
     </section>
   );
 };

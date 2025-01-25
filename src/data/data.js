@@ -13,7 +13,7 @@ import imageSix from ".././components/assets/Gallary/image-six.svg";
 import imageSeven from ".././components/assets/Gallary/image-seven.svg";
 import imageEight from ".././components/assets/Gallary/image-eight.svg";
 
-export const quoteBeforeData = [
+export const quoteAfterData = [
   {
     id: 1,
     number: "01",
@@ -30,9 +30,6 @@ export const quoteBeforeData = [
       "Optimize your business operations with commercial solar systems that lower operational costs and demonstrate your commitment to sustainability.",
     icon: dropUpIcon,
   },
-];
-
-export const quoteAfterData = [
   {
     id: 3,
     number: "03",
