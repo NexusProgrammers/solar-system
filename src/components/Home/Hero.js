@@ -5,6 +5,20 @@ import { IoIosArrowForward } from "react-icons/io";
 import globalIcon from "../assets/global-icon.svg";
 import { PiPhoneCallThin } from "react-icons/pi";
 import verifyIcon from "../assets/verify-icon.svg";
+import solar1 from "../../components/assets/solar-images/1.png";
+import solar2 from "../../components/assets/solar-images/2.png";
+import solar3 from "../../components/assets/solar-images/3.png";
+import solar4 from "../../components/assets/solar-images/4.png";
+import solar5 from "../../components/assets/solar-images/5.png";
+import solar6 from "../../components/assets/solar-images/6.png";
+import solar7 from "../../components/assets/solar-images/7.png";
+import solar8 from "../../components/assets/solar-images/8.png";
+import solar9 from "../../components/assets/solar-images/9.png";
+import solar10 from "../../components/assets/solar-images/10.png";
+import solar11 from "../../components/assets/solar-images/11.png";
+import solar12 from "../../components/assets/solar-images/12.png";
+import solar13 from "../../components/assets/solar-images/13.png";
+import solar14 from "../../components/assets/solar-images/14.png";
 
 const Hero = () => {
   return (
@@ -20,28 +34,81 @@ const Hero = () => {
       </div>
       <nav className="relative z-10 px-4 py-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <div className="flex-shrink-0 absolute top-32">
-            <p className="uppercase hidden xl:flex gap-10 text-white text-[140px] font-extrabold">
-              <div>
-                <span>S</span>
-                <span>O</span>
-                <span>L</span>
-                <span>A</span>
-                <span>R</span>
-              </div>
-
-              <div>
-                <span className="opacity-90">S</span>
-                <span className="opacity-80">O</span>
-                <span className="opacity-70">L</span>
-                <span className="opacity-60">U</span>
-                <span className="opacity-50">T</span>
-                <span className="opacity-40">I</span>
-                <span className="opacity-30">O</span>
-                <span className="opacity-10">N</span>
-                <span className="opacity-5">S</span>
-              </div>
-            </p>
+          <div className="flex justify-between max-w-7xl w-full absolute top-44">
+            <div className="flex gap-4 items-center">
+              <Image
+                src={solar1}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto"
+              />
+              <Image
+                src={solar2}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto"
+              />
+              <Image
+                src={solar3}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto"
+              />
+              <Image
+                src={solar4}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto"
+              />
+              <Image
+                src={solar5}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto"
+              />
+            </div>
+            <div className="flex gap-4 items-center">
+              <Image
+                src={solar6}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-70"
+              />
+              <Image
+                src={solar7}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-65"
+              />
+              <Image
+                src={solar8}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-60"
+              />
+              <Image
+                src={solar9}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-55"
+              />
+              <Image
+                src={solar10}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-50"
+              />
+              <Image
+                src={solar11}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-45"
+              />
+              <Image
+                src={solar12}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-40"
+              />
+              <Image
+                src={solar13}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-35"
+              />
+              <Image
+                src={solar14}
+                alt="Solar Panels Background"
+                className="max-h-[92.87px] w-auto opacity-20"
+              />
+            </div>
           </div>
         </div>
       </nav>
