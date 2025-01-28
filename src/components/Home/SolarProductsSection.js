@@ -25,7 +25,7 @@ const SolarProductsSection = () => {
             find the perfect energy solution for you.
           </p>
         </div>
-        <div className="flex flex-wrap items-center justify-around w-full">
+        <div className="flex flex-wrap items-center justify-around w-full gap-4">
           {products.map((product, index) => (
             <div
               key={index}

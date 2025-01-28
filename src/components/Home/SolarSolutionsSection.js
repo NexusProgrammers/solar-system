@@ -12,7 +12,7 @@ import endToEndIcon from "../assets/end-to-end-icon.svg";
 import solarImage from "../assets/solar-image.svg";
 import dropDownIcon from "../assets/drop-down-icon.svg";
 import dropUpIcon from "../assets/drop-up-icon.svg";
-import { quoteAfterData,  } from "@/data/data";
+import { quoteAfterData } from "@/data/data";
 
 const SolarSolutionsSection = () => {
   const [openSections, setOpenSections] = useState({});
@@ -32,7 +32,7 @@ const SolarSolutionsSection = () => {
           key={item.id}
           className="flex flex-col justify-between mt-12 border-b-2 pb-6"
         >
-          <div className="flex justify-between gap-8">
+          <div className="hidden md:flex flex-col md:flex-row justify-between gap-8">
             <p className="font-medium text-2xl text-[#20202066]">
               {item.number}
             </p>
@@ -48,11 +48,36 @@ const SolarSolutionsSection = () => {
               transition={{ duration: 0.3 }}
             >
               {isOpen ? (
-                <Image src={dropDownIcon} alt="dropDownIcon" />
+                <Image src={dropUpIcon} alt="dropUpIcon" />
               ) : (
-                <Image src={dropUpIcon} alt="dropDownIcon" />
+                <Image src={dropDownIcon} alt="dropDownIcon" />
               )}
             </motion.div>
+          </div>
+
+          <div className="md:hidden flex flex-col md:flex-row justify-between gap-8">
+            <div className="flex justify-around items-center">
+              <p className="font-medium text-2xl text-[#20202066]">
+                {item.number}
+              </p>
+              <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+                {item.title}
+              </p>
+              <motion.div
+                onClick={() => toggleSection(item.id)}
+                className="cursor-pointer flex justify-start items-start"
+                transition={{ duration: 0.3 }}
+              >
+                {isOpen ? (
+                  <Image src={dropUpIcon} alt="dropUpIcon" />
+                ) : (
+                  <Image src={dropDownIcon} alt="dropDownIcon" />
+                )}
+              </motion.div>
+            </div>
+            <p className="text-[#202020B2] font-normal max-w-[468px] mt-4">
+              {item.description}
+            </p>
           </div>
 
           <div

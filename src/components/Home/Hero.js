@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <nav className="relative z-10 px-4 py-4 hidden lg:block">
         <div className="max-w-7xl mx-auto flex items-center justify-center">
-          <div className="flex justify-between max-w-7xl w-full absolute top-44">
+          <div className="flex justify-between max-w-7xl w-full absolute top-56">
             <div className="flex gap-4 items-center">
               <Image
                 src={solar1}
