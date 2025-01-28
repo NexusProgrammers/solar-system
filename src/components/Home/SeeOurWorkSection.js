@@ -6,7 +6,7 @@ const SeeOurWorkSection = () => {
       <div className="max-w-7xl w-full">
         <div className="w-full flex-wrap flex justify-between p-3 md:p-0 mt-10">
           <div className="flex flex-col gap-4">
-            <p className="text-[#202020] font-semibold text-4xl">
+            <p className="text-[#202020] font-semibold text-2xl md:text-4xl">
               See Our Work in Action
             </p>
             <button className="bg-[#EAC26A] rounded-full flex items-center justify-center w-[212px] h-[48px] text-white font-semibold text-lg">

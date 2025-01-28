@@ -7,7 +7,7 @@ const TestimonialsSection = () => {
     <>
       <div className="flex items-center justify-center px-4">
         <div className="max-w-7xl bg-[#1AAC98] rounded-3xl w-full place-content-center place-items-center">
-          <div className="lg:hidden place-content-center place-items-center">
+          <div className="lg:hidden place-content-center place-items-center px-2">
             <div className="flex justify-start flex-col md:flex-row gap-6 mt-6 mb-6 w-full">
               <h2 className="text-white text-xl font-bold">
                 WHAT CUSTOMERS SAYS?
@@ -16,11 +16,11 @@ const TestimonialsSection = () => {
                 Read All Reviews
               </button>
             </div>
-            <div className="space-y-6 mb-6">
+            <div className="space-y-6 mb-6 px-2">
               {testimonialsData.map((testimonial, index) => (
                 <div
                   key={index}
-                  className="bg-[#1B9C8A] p-6 rounded-xl w-[390px]"
+                  className="bg-[#1B9C8A] p-6 rounded-xl w-auto md:w-[390px]"
                 >
                   <div className="flex mb-3">
                     {[...Array(testimonial.rating)].map((_, i) => (

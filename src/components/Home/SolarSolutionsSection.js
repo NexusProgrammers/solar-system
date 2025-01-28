@@ -60,7 +60,7 @@ const SolarSolutionsSection = () => {
               <p className="font-medium text-2xl text-[#20202066]">
                 {item.number}
               </p>
-              <p className="text-3xl text-[#202020] font-semibold max-w-xs">
+              <p className="ml-4 md:ml-0 text-xl md:text-3xl text-[#202020] font-semibold max-w-xs">
                 {item.title}
               </p>
               <motion.div
@@ -158,7 +158,7 @@ const SolarSolutionsSection = () => {
     <section className="max-w-7xl mx-auto px-4 py-16">
       <div className="gap-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden">
         <div className="flex flex-col justify-between w-[400px]">
-          <p className="font-semibold text-2xl lg:text-4xl">
+          <p className="font-semibold text-lg md:text-2xl lg:text-4xl">
             SUPPLYING AND INSTALLING A WIDE RANGE OF SOLAR SOLUTIONS
           </p>
           <div className="mb-12">
@@ -174,7 +174,7 @@ const SolarSolutionsSection = () => {
           </div>
         </div>
 
-        <div className="relative rounded-2xl overflow-hidden w-[400px]">
+        <div className="relative rounded-2xl overflow-hidden w-auto md:w-[400px]">
           <Image
             src={solarWorker}
             alt="Solar installation workers"

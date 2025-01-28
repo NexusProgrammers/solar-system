@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
         </div>
       </nav>
-      <div className="relative z-10 max-w-7xl mx-auto pt-40 lg:pt-80 px-4 lg:px-0">
+      <div className="relative z-10 max-w-7xl mx-auto pt-32 md:pt-40 lg:pt-80 px-4 lg:px-0">
         <div className="flex justify-center lg:justify-between items-end flex-wrap px-4 lg:px-0">
           <div className="flex flex-col items-center lg:items-start justify-center">
             <div className="bg-white rounded-xl mb-6 flex items-center justify-center gap-2 w-[321px] h-[43px]">
@@ -133,19 +133,19 @@ const Hero = () => {
               Winnipeg. We offer efficient and advanced solar panel solutions
               for all home, farm, business, and commercial properties.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full">
-              <button className="bg-[#1AAC98] font-semibold text-lg flex items-center justify-center border border-white text-white w-full lg:w-[207px] h-[49px] rounded-full hover:bg-teal-600 transition-colors">
+            <div className="flex flex-col items-center sm:flex-row gap-4 justify-center lg:justify-start w-full">
+              <button className="bg-[#1AAC98] font-semibold text-lg flex items-center justify-center border border-white text-white w-full max-w-xs lg:w-[207px] h-[49px] rounded-full hover:bg-teal-600 transition-colors">
                 Get a Free Quote <IoIosArrowForward />
               </button>
-              <button className="bg-[#EAC26A] text-black font-semibold gap-2 text-lg flex items-center justify-center border border-white w-full lg:w-[207px] h-[49px] rounded-full hover:bg-yellow-500 transition-colors">
+              <button className="bg-[#EAC26A] text-black font-semibold gap-2 text-lg flex items-center justify-center border border-white max-w-xs  w-full lg:w-[207px] h-[49px] rounded-full hover:bg-yellow-500 transition-colors">
                 <PiPhoneCallThin size={22} /> Call Us Now
               </button>
             </div>
           </div>
           <div className="flex flex-col gap-2 lg:gap-4 mt-8 lg:mt-0">
             <div className="flex gap-2 lg:gap-4 place-content-center">
-              <div className="bg-[#FFFFFFCC] w-[177px] lg:w-[180px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
-                <p className="font-black text-4xl">70%</p>
+              <div className="bg-[#FFFFFFCC] md:w-[177px] lg:w-[180px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
+                <p className="font-black text-xl lg:text-4xl">70%</p>
                 <p>
                   <span className="font-medium text-sm">
                     Save Up to 70% on Your{" "}
@@ -153,8 +153,8 @@ const Hero = () => {
                   <span className="font-bold text-sm">Energy Bills</span>
                 </p>
               </div>
-              <div className="bg-[#FFFFFFCC] w-[210px] lg:w-[214px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
-                <p className="font-black text-4xl">1,000</p>
+              <div className="bg-[#FFFFFFCC] md:w-[210px] lg:w-[214px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
+                <p className="font-black text-xl lg:text-4xl">1,000</p>
                 <p className="font-medium text-sm text-center">
                   Over 1,000 Installations Completed
                 </p>
@@ -178,25 +178,6 @@ const Hero = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="relative">
-              <div className="relative flex items-center justify-center over">
-                <Image
-                  src={imageOne}
-                  alt="imageOne"
-                  className="absolute z-50 top-0"
-                />
-                <Image
-                  src={imageTwo}
-                  alt="imageTwo"
-                  className="absolute z-40 top-3"
-                />
-                <Image
-                  src={imageThree}
-                  alt="imageThree"
-                  className="absolute z-30 top-6"
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
