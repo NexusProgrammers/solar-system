@@ -5,7 +5,7 @@ import Image from "next/image";
 const TestimonialsSection = () => {
   return (
     <>
-      <div className="flex items-center justify-center px-4">
+      <div className="flex items-center justify-center">
         <div className="max-w-7xl bg-[#1AAC98] rounded-3xl w-full place-content-center place-items-center">
           <div className="lg:hidden place-content-center place-items-center px-2">
             <div className="flex justify-start flex-col md:flex-row gap-6 mt-6 mb-6 w-full">

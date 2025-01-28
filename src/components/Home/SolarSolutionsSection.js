@@ -75,7 +75,7 @@ const SolarSolutionsSection = () => {
                 )}
               </motion.div>
             </div>
-            <p className="text-[#202020B2] font-normal max-w-[468px] mt-4">
+            <p className="text-[#202020B2] font-normal max-w-[468px] mt-4 hidden sm:block">
               {item.description}
             </p>
           </div>
