@@ -112,7 +112,7 @@ const Hero = () => {
           </div>
         </div>
       </nav>
-      <div className="relative z-10 max-w-7xl mx-auto pt-32 md:pt-40 lg:pt-80 px-4 lg:px-0">
+      <div className="relative z-10 max-w-7xl mx-auto pt-24 md:pt-32 lg:pt-40 xl:pt-80 px-4 lg:px-0">
         <div className="flex justify-center lg:justify-between items-end flex-wrap px-4 lg:px-0">
           <div className="flex flex-col items-center lg:items-start justify-center">
             <div className="bg-white rounded-xl mb-6 flex items-center justify-center gap-2 w-[321px] h-[43px]">
