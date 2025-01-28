@@ -115,19 +115,19 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto pt-24 md:pt-32 lg:pt-40 xl:pt-80 px-4 lg:px-0">
         <div className="flex justify-center lg:justify-between items-end flex-wrap px-4 lg:px-0">
           <div className="flex flex-col items-center lg:items-start justify-center">
-            <div className="bg-white rounded-xl mb-6 flex items-center justify-center gap-2 w-[321px] h-[43px]">
+            <div className="bg-white rounded-xl mb-3 md:mb-6 flex items-center justify-center gap-2 w-[321px] h-[43px]">
               <Image src={globalIcon} alt="globalIcon" />
               <p className="text-[#1AAC98] text-base font-semibold">
                 Manitoba's solar energy company
               </p>
             </div>
-            <h1 className="text-4xl sm:text-[42px] lg:text-[60px] font-bold text-white text-center lg:text-left">
+            <h1 className="text-2xl md:text-4xl sm:text-[42px] lg:text-[60px] font-bold text-white text-center lg:text-left">
               <p className="whitespace-nowrap">
                 FOR US. <span className="text-yellow-400">FOR THEM.</span>
               </p>
-              <p className="whitespace-nowrap py-8">FOR THE FUTURE.</p>
+              <p className="whitespace-nowrap py-2 md:py-8">FOR THE FUTURE.</p>
             </h1>
-            <p className="text-white text-base lg:text-lg mb-8 max-w-xl text-center lg:text-left">
+            <p className="text-white text-base lg:text-lg mb-3 md:mb-8 max-w-xl text-center lg:text-left">
               Manitoba's leader in Solar Panel supply and installation. We
               design, setup, deliver, and install solar array systems locally in
               Winnipeg. We offer efficient and advanced solar panel solutions
@@ -142,7 +142,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-col gap-2 lg:gap-4 mt-8 lg:mt-0">
+          <div className="flex flex-col gap-2 lg:gap-4 mt-3 md:mt-8 lg:mt-0">
             <div className="flex gap-2 lg:gap-4 place-content-center">
               <div className="bg-[#FFFFFFCC] md:w-[177px] lg:w-[180px] h-[143px] backdrop-blur-sm p-6 rounded-3xl flex flex-col items-center justify-center">
                 <p className="font-black text-xl lg:text-4xl">70%</p>

@@ -46,7 +46,7 @@ const Header = () => {
               isSticky ? "" : "bg-white/80 rounded-[100px] mt-3 px-6 shadow"
             }`}
           >
-            <div className="flex justify-between items-center h-[72px]">
+            <div className="flex justify-between items-center h-[60px] md:h-[72px]">
               <div className="lg:hidden">
                 <button
                   onClick={toggleMenu}
