@@ -156,12 +156,12 @@ const SolarSolutionsSection = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-16">
-      <div className="gap-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden">
+      <div className="md:gap-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 overflow-hidden">
         <div className="flex flex-col justify-between w-auto md:w-[400px]">
           <p className="font-semibold text-lg md:text-2xl lg:text-4xl">
             SUPPLYING AND INSTALLING A WIDE RANGE OF SOLAR SOLUTIONS
           </p>
-          <div className="mb-12">
+          <div className="mb-6 md:mb-12">
             <h3 className="font-bold mb-3 text-xl">
               What Work We Do in Manitoba
             </h3>

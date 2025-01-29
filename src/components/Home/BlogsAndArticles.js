@@ -146,7 +146,7 @@ const BlogsAndArticles = () => {
   return (
     <div className="bg-[#f7f5f5] py-8 px-4 sm:px-6 lg:px-8 rounded-3xl">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between w-full items-start gap-6">
+        <div className="flex flex-col md:flex-row justify-between w-full items-start gap-6 px-2 md:px-0">
           <h2 className="text-3xl font-bold text-gray-900">BLOGS & ARTICLES</h2>
           <div className="flex items-center gap-1">
             <button

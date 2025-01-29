@@ -75,7 +75,7 @@ const IncentivesCards = () => {
             key={index}
             className={`${card.bgColor} rounded-3xl p-8 relative text-white`}
           >
-            <div className="flex justify-between items-start mb-6">
+            <div className="flex justify-between items-start md:mb-6">
               <h2 className="text-2xl font-medium">{card.type}</h2>
               <Image src={card.icon} alt="icon" className="cursor-pointer" />
             </div>

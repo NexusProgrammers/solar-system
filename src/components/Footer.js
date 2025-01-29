@@ -11,7 +11,9 @@ const Footer = () => {
         <div className=" text-white w-full flex flex-col md:flex-row justify-between max-w-7xl items-start px-4">
           <div className="h-full">
             <div className="max-w-xl md:border-r-[1px] border-b-[1px] border-[#FFFFFF33] h-full py-16">
-              <Image src={vibesEngeryFooter} alt="vibesEngeryFooter" />
+              <div className="-ml-4">
+                <Image src={vibesEngeryFooter} alt="vibesEngeryFooter" />
+              </div>
               <p>
                 Vibes Energy Solar is Manitoba's certified solar experts. Find
                 out your potential savings with Solar Power Solutions for all
@@ -41,10 +43,10 @@ const Footer = () => {
           </div>
           <div className="max-w-2xl flex flex-col md:py-24 justify-end">
             <div>
-              <div className="flex items-center border-b border-[gray-600] pb-4">
+              <div className="flex items-center border-b border-[gray-600] pb-4 overflow-hidden">
                 <label
                   htmlFor="email"
-                  className="font-normal text-xl md:text-3xl text-[#FFFFFF] pb-2"
+                  className="font-normal whitespace-nowrap text-lg sm:text-xl md:text-3xl text-[#FFFFFF] pb-2"
                 >
                   Enter Your Email
                 </label>

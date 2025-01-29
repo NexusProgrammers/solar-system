@@ -62,12 +62,12 @@ const RenewableSection = () => {
                 <Image
                   src={greenImage}
                   alt={"greenImage"}
-                  className="mt-2 ml-8 w-[89%] h-[100%] "
+                  className="mt-2 ml-2 md:ml-8 w-[89%] h-[100%] "
                 />
                 <Image
                   src={OpenChatIcon}
                   alt={"OpenChatIcon"}
-                  className="absolute -top-4 left-6"
+                  className="absolute -top-4 left-2 md:left-6"
                 />
               </div>
               <div className="p-4 bg-white flex flex-col items-center lg:block">
