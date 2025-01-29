@@ -42,24 +42,22 @@ const Footer = () => {
             </div>
           </div>
           <div className="max-w-2xl flex flex-col md:py-24 justify-end">
-            <div>
-              <div className="flex items-center border-b border-[gray-600] pb-4 overflow-hidden">
-                <label
-                  htmlFor="email"
-                  className="font-normal whitespace-nowrap text-lg sm:text-xl md:text-3xl text-[#FFFFFF] pb-2"
-                >
-                  Enter Your Email
-                </label>
-                <input
-                  type="email"
-                  className="flex-grow bg-[#202020] text-white placeholder-gray-400 focus:outline-none"
-                />
-                <Image
-                  src={circleYellowIcon}
-                  alt="circleYellowIcon"
-                  className="cursor-pointer"
-                />
-              </div>
+            <div className="flex items-center border-b border-[gray-600] pb-2 mt-1 sm:pb-4 overflow-hidden">
+              <label
+                htmlFor="email"
+                className="font-normal whitespace-nowrap text-sm sm:text-lg md:text-xl lg:text-3xl text-[#FFFFFF] pb-2"
+              >
+                Enter Your Email
+              </label>
+              <input
+                type="email"
+                className="flex-grow bg-[#202020] text-white placeholder-gray-400 focus:outline-none"
+              />
+              <Image
+                src={circleYellowIcon}
+                alt="circleYellowIcon"
+                className="cursor-pointer"
+              />
             </div>
             <div className="py-4">
               <div className="flex flex-wrap gap-8">
