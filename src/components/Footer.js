@@ -56,7 +56,7 @@ const Footer = () => {
               <Image
                 src={circleYellowIcon}
                 alt="circleYellowIcon"
-                className="cursor-pointer"
+                className="cursor-pointer -ml-14 sm:-ml-0"
               />
             </div>
             <div className="py-4">
